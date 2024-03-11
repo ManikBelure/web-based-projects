@@ -1,0 +1,75 @@
+/* *
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+.hi
+{
+    background-color: red; 
+    width: 400px;
+    height: 400px;
+    margin: 100px auto;
+    position: relative;
+}
+
+.me
+{
+    background-color:goldenrod;
+    /* border: 2px solid chocolate; */
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+     /* bottom: 0px; */
+    overflow: hidden;
+    transition: width 3s;
+    /* transition: transform 3s; */
+}
+.you
+{
+    background-color: goldenrod;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 0px;
+    right: 50%;
+    transition: width 2s;
+    overflow: hidden;
+}
+
+.hi:hover .me
+{
+    width: 50%;
+    height: 100%;
+}
+.hi:hover .you
+{
+    width: 50%;
+    height: 100%;
+}
+.me h1
+{
+    position:relative;
+    font-size: 35px;
+    top: 160px;
+    left: 20px;
+    text-align: center;
+}
+.you h1
+{
+    position:relative;
+    font-size: 35px;
+    top: 160px;
+    right: 0px;
+    text-align: center;
+}
+.heading
+{
+    position: relative;
+    font-size: 35px;
+    top: 190px;
+    left: 103px;
+}

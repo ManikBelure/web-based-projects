@@ -1,0 +1,333 @@
+* 
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body
+{
+    width: 100%;
+}
+body
+{
+    background-color: rgba(228, 223, 223, 0.276);
+}
+
+/*Navbar Starts */
+
+.navbar
+{
+    background-color: white;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar ul
+{
+    display: inline-block;
+    margin-left: 400px;
+}
+
+.navbar ul li
+{
+    display: inline;
+}
+
+.navbar ul li a
+{
+    margin-left: 30px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    transition: all .5s;
+}
+
+.navbar ul li a:hover
+{
+    color: rgb(3, 188, 3);
+}
+
+.navbar ul .navbar-icons
+{
+    margin-left: 40px;
+    border-left: 1px solid gray;
+}
+
+.navbar ul .navbar-icons a
+{
+    margin-left: 10px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.navbar-logo
+{
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar .fa
+{
+    color: gray;
+    transition: all .3s;
+}
+
+.navbar .fa:hover
+{
+    color: rgb(3, 138, 3);
+}
+/* Navbar Ends */
+
+/* Banner Starts */
+
+.banner
+{
+    height: 520px;
+    background-image:url("https://bootstrapmade.com/demo/templates/Company/assets/img/slide/slide-1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-content
+{
+    border-top: 5px solid #1bbd36;
+    width: 600px;
+    padding: 20px;
+    background-color: rgb(0, 0, 0,o.574);
+    color: white;
+}
+
+.banner-content p
+{
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.banner-button
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.banner-button a
+{
+    padding: 7px 20px;
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+    border: 2px solid #1bbd36;
+    border-radius: 5px;
+    font-weight: bold;
+    word-spacing: 3px;
+    transition: all .3s;
+}
+
+.banner-button a:hover
+{
+    background-color:  #1bbd36;
+}
+/* Banner Ends*/
+
+/* jspiders listing starts*/
+
+.listing
+{
+    margin: 50px 80px;
+    padding: 2px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.listing-content
+{
+    margin: 20px;
+    padding: 10px;
+    width: 600px;
+}
+
+.listing-content h1
+{
+    font-size: 30px;
+}
+
+.listing-content h3
+{
+    font-size: 20px;
+    color: rgb(89, 89, 94);
+    margin-top: 30px;
+}
+
+.listing-content ul
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.listing-content ul li
+{
+    margin-top: 12px;
+    list-style-type: none;
+}
+
+.listing-content ul li .fa
+{
+    color: #1bbd36;
+}
+/* jspiders listing ends*/
+
+/*jspiders cards starts*/
+
+.jsp-cards
+{
+    margin: 50px 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.jsp-cards .card
+{
+    width: 300px;
+    height: 250ps;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: white;
+    transition: all .8s;
+}
+
+.jsp-cards .card:hover
+{
+    box-shadow: 2px 2px 40px 1px lightgray;
+}
+
+.jsp-cards .card .card-content
+{
+    text-align: center;
+    padding: 10px;
+}
+
+.jsp-cards .card .card-content h3
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.jsp-cards .card .card-content p
+{
+    font-size: 12px;
+    color: gray;
+}
+
+.jsp-cards .card .card-content i
+{
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 100%;
+    padding-top: 8px;
+    font-size: 25px;
+    background-color: rgba(211, 211, 211, 0.399);
+    transition: all .6s;
+}
+
+.fa-dribbble 
+{
+    color: aqua;
+}
+
+.fa-file-text-o
+{
+    color: orangered;
+}
+
+.fa-tachometer
+{
+    color: crimson;
+}
+
+.jsp-cards .card:hover .fa-dribbble
+{
+    background-color: aqua;
+    color: white;
+}
+
+.jsp-cards .card:hover .fa-file-text-o
+{
+    background-color: orangered;
+    color: white;
+}
+
+.jsp-cards .card:hover .fa-tachometer
+{
+    background-color: crimson;
+    columns: white;
+}
+
+/* jspiders cards ends*/
+
+/* jaspiders logo starts */
+
+.jsp-logos
+{
+    margin: 50px 80px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+.jsp-logos .logo
+{
+    border: 1px solid lightgray;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+
+.jsp-logos .logo img
+{
+    width: 50%;
+    height: 50%;
+    filter: grayscale(100%);
+    transition: all 2s;
+}
+
+.jsp-logos .logo:hover img
+{
+    transform: scale(1.1);
+    filter: none;
+}
+
+.jsp-logos .logo1, .jsp-logos .logo2, .jsp-logos .logo3
+{
+    border-right: none;
+    border-bottom: none;
+}
+
+.jsp-logos .logo4
+{
+    border-bottom: none;
+}
+
+.jsp-logos .logo5, .jsp-logos .logo6, .jsp-logos .logo7
+{
+    border-right: none;
+}
+/* jspiders logo ends */

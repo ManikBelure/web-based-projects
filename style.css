@@ -1,0 +1,18 @@
+/* Element selector*/
+h1
+{
+    color: red;
+    text-shadow: 2px 2px 2px ;
+}
+a
+{
+color: pink;
+}*/
+
+/* group selectotr*/
+h1,a,p,h2
+{
+color: greenyellow;
+text-shadow:2px 2px 2px ;
+
+}
