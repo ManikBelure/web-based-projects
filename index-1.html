@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="index-1.css">
+    <script src="https://kit.fontawesome.com/9c535bccd3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                
+<h3>Manik Belure</h3>
+
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                
+            </nav>
+
+        <div class="header-text">
+        <p><h1>Hi, 
+            <br>
+            I'm <span> Manik </span>
+            <br>
+            Engineering Graduate
+        </h1>
+        </p>
+    </div>
+    </div>
+    </div>
+
+    <!------------------about------------------->
+    <div id="about">
+    <div class="container">
+        <div class="row">
+        <div class=""about-col-1">
+            
+        <div class=""about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <p>Seeking a challenging career in a progressive organization that provides opportunity to capitalize my
+            technical skills and abilities in the field of information technology.</p>
+       <div class="tab-titles">
+<p class="tab-links active-link" onclick="opentab('Education')">Education</p>
+<p class="tab-links" onclick="opentab('Internship')">Internship</p>
+       </div>
+       
+    <ol>
+        <li><span>Core Java,Advance Java,JDBC, Hibernate,Spring Framework</span></li>
+        <li><span>Java</span></li>
+     <li><span>HTML5,CSS3,JavaScript</span>  </li>
+    </ol>
+</div>-->
+
+<div class="tab-contents active-tab" id="Education">
+    <ul>
+        <li><span>CB GurukulPU College.Vijayapur(68.33%)</span></li>
+        <li><span>THE OXFORD COLLEGE OF Engineering College.Bengaluru(2018-2022)</span><br>● Electrical and Electroics Engg(8.25 cgpa)</li>
+    </ul>
+</div>
+
+<div class="tab-contents" id="Internship">
+    <ul>
+        <li><span> News Corp,Bengaluru(08/23-02/24)</span></li>● Actively participated in front-end development projects and created responsive and user-friendly interface to replicate the Zomato platform.
+            <br>● Collaborated with a team of developers and designers to implement user-friendly interfaces. </li>
+    </ul>
+</div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    <!---------------------skills------------------>
+    <div id="Skills">
+        <div class="container">
+            <h1 class="sub-title">Skills</h1>
+            <div class="skills-list">
+                
+                <div>
+             <h1><i class="fa-brands fa-java"> JAVA</i>   
+                    
+            <h3>Programming Languages</h3>
+            <p><h4><span>Core Java,Advance Java,JDBC, Hibernate,Spring Framework</span></h4></p>
+        </div>
+
+         <div>
+            <h1><i class="fab fa-html5"></i> 
+                <i class="fa-brands fa-css3"></i> 
+                <i class="fa-brands fa-js"></i>
+                <h3>Web Development</h3>
+                  <p><h4><span>HTML5,CSS3,JavaScript</span></h4></p>
+                </div>
+
+                  <div>
+                    <h1><i class="fa fa-database"></i>
+                    <h3>Database</h3>
+                    <p><h4><span>MySQL</span></h4></p>
+                </div> 
+                
+            </div>
+        </div>
+    </div>
+    <!---------------contact---------------->
+    <div id="contact">
+        <div class="container">
+           <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+                <p><i class="fa-solid fa-phone"></i>9999988888</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    
+                </div>
+               <!--- <a href=" "class="btn btn2">Download CV</a>-->
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+        <button type="submit" class="btn btn2">Submit</button>
+        
+        </form>
+            </div>
+
+        </div>
+    </div>
+    <div class="Copyright">
+        <p>Copyright © Manik</p>
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+         document.getElementById(tabname).classList.add("active-tab");
+        }
+            </script>
+</body>
+</html>
